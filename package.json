@@ -1,0 +1,41 @@
+{
+  "name": "epishev.ru",
+  "description": "",
+  "version": "1.2.0",
+  "author": "Konstantin Epishev <lamartire@gmail.com> (http://epishev.ru)",
+  "repository": "https://github.com/lamartire/epishev.ru",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths",
+    "postdeploy": "gh-pages -d public",
+    "develop": "gatsby develop",
+    "preserve": "npm run build",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test": "echo \"Should probably write some tests!\""
+  },
+  "dependencies": {
+    "gatsby": "~1.9.45",
+    "gatsby-link": "~1.6.17",
+    "gatsby-plugin-catch-links": "~1.0.1",
+    "gatsby-plugin-react-helmet": "~1.0.1",
+    "gatsby-plugin-react-next": "~1.0.4",
+    "gatsby-plugin-sharp": "~1.6.8",
+    "gatsby-remark-images": "~1.5.13",
+    "gatsby-source-filesystem": "~1.5.1",
+    "gatsby-transformer-remark": "~1.7.12",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "styled-components": "^3.2.5",
+    "styled-theme": "^0.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "1.1.0",
+    "prettier": "1.10.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a"
+}
