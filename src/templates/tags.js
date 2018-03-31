@@ -25,9 +25,7 @@ export default function Tags({ pathContext }) {
             )
           })}к
         </ul>
-        <Link to="/tags">
-          <TagsIcon /> All tags
-        </Link>
+        <Link to="/tags">All tags</Link>
       </div>
     )
   }
@@ -44,9 +42,7 @@ export default function Tags({ pathContext }) {
           )
         })}
       </ul>
-      <Link to="/">
-        <HomeIcon /> All posts
-      </Link>
+      <Link to="/">All posts</Link>
     </div>
   )
 }
