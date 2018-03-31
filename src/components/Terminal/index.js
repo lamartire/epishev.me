@@ -67,14 +67,23 @@ export default class TerminalWrapper extends React.Component {
     e.preventDefault()
 
     const { history, command } = this.state
-    const { processCommand } = this.props
-    const commandResult = processCommand(command)
 
-    this.setState({
-      ...this.state,
-      history: history.concat(commandResult),
-      command: ''
-    })
+    if (command === 'clear') {
+      this.setState({
+        ...this.state,
+        history: [],
+        command: ''
+      })
+    } else {
+      const { processCommand } = this.props
+      const commandResult = processCommand(command)
+
+      this.setState({
+        ...this.state,
+        history: history.concat(commandResult),
+        command: ''
+      })
+    }
   }
 
   render() {
