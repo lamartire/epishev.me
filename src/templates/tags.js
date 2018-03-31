@@ -23,7 +23,7 @@ export default function Tags({ pathContext }) {
                 <p>{excerpt}</p>
               </li>
             )
-          })}
+          })}к
         </ul>
         <Link to="/tags">
           <TagsIcon /> All tags

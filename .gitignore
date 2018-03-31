@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+*.lock
 
 # Runtime data
 pids
@@ -31,3 +32,6 @@ public/
 .cache/
 .DS_Store
 
+# Yarn
+
+yarn*
