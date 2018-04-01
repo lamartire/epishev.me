@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
     author: 'You!',
-    title: `Gatsby Default (Blog) Starter`,
+    title: `Gatsby Default (Blog) Starter`
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -11,8 +11,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/blog`,
-        name: 'blog',
-      },
+        name: 'blog'
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -27,7 +27,10 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-less'
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp'
-  ],
+  ]
 }

@@ -21,9 +21,7 @@
       "node_modules/react/",
       "node_modules/enzyme/"
     ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ],
+    "coveragePathIgnorePatterns": ["/node_modules/"],
     "globals": {
       "NODE_ENV": "dev"
     }
@@ -40,9 +38,7 @@
     "gatsby-transformer-remark": "~1.7.12",
     "react": "~16.2.0",
     "react-dom": "~16.2.0",
-    "react-markdown": "^3.3.0",
-    "styled-components": "^3.2.5",
-    "styled-theme": "^0.3.3"
+    "react-markdown": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -53,13 +49,12 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "gatsby-plugin-less": "^1.1.8",
     "gh-pages": "1.1.0",
     "jest": "^22.4.3",
     "prettier": "1.10.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a"
 }

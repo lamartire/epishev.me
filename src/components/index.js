@@ -1,6 +1,3 @@
-export { default as Container } from './Container'
 export { default as Tags } from './Tags'
 export { default as Link } from './Link'
-export { default as TerminalInput } from './TerminalInput'
-export { default as TerminalOutput } from './TerminalOutput'
 export { default as Terminal } from './Terminal'

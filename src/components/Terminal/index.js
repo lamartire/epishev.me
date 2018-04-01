@@ -1,23 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import styled from 'styled-components'
 
 import { commandsHandler } from '../../hoc'
-import { TerminalInput, TerminalOutput } from '../'
-
-const Terminal = styled.section``
-const TerminalForm = styled.form`
-  display: flex;
-  align-items: center;
-`
-const TerminalInputLabel = styled.span`
-  flex: 0 0 auto;
-  margin-right: 10px;
-`
-const TerminalInputWrapper = styled.div`
-  flex: 1 1 auto;
-`
-const TerminalOutputWrapper = styled.section``
 
 @commandsHandler()
 export default class TerminalWrapper extends React.Component {
@@ -48,7 +32,9 @@ export default class TerminalWrapper extends React.Component {
     const { history } = this.state
 
     return history.map((item, i) => (
-      <ReactMarkdown key={`terminal-history-${i}`} source={item} />
+      <li className="terminal__line">
+        <ReactMarkdown key={`terminal-history-${i}`} source={item} />
+      </li>
     ))
   }
 
@@ -90,22 +76,20 @@ export default class TerminalWrapper extends React.Component {
     const { command } = this.state
 
     return (
-      <Terminal>
-        <TerminalOutputWrapper>
-          <TerminalOutput>{this.renderHistory()}</TerminalOutput>
-        </TerminalOutputWrapper>
-        <TerminalForm onSubmit={this.onSubmitTerminalForm}>
-          <TerminalInputLabel>~ guest -></TerminalInputLabel>
-          <TerminalInputWrapper>
-            <TerminalInput
-              innerRef={el => (this.input = el)}
-              value={command}
-              onBlur={this.onBlurInput}
-              onChange={this.onChangeInput}
-            />
-          </TerminalInputWrapper>
-        </TerminalForm>
-      </Terminal>
+      <section className="terminal">
+        <ul className="terminal__output">{this.renderHistory()}</ul>
+        <form className="terminal__form" onSubmit={this.onSubmitTerminalForm}>
+          <span className="terminal__label">~ guest -></span>
+          <input
+            className="terminal__input"
+            type="text"
+            ref={el => (this.input = el)}
+            value={command}
+            onBlur={this.onBlurInput}
+            onChange={this.onChangeInput}
+          />
+        </form>
+      </section>
     )
   }
 }
