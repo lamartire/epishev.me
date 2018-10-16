@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import { Header, Footer, Container } from '../components'
+import { Stub } from '../components'
 import '../less/main.less'
 
 export default class Template extends React.Component {
@@ -17,7 +17,7 @@ export default class Template extends React.Component {
     return (
       <React.Fragment>
         <Helmet
-          title="Konstantine 🐱 Epishev"
+          title="Konstantin Epishev"
           meta={[
             { name: 'description', content: "lamartire's presonal site." },
             {
@@ -27,13 +27,7 @@ export default class Template extends React.Component {
             }
           ]}
         />
-        <Container>
-          <Header />
-        </Container>
-        <Container>{this.props.children()}</Container>
-        <Container>
-          <Footer />
-        </Container>
+        <Stub />
       </React.Fragment>
     )
   }

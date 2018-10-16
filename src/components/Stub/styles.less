@@ -1,0 +1,27 @@
+.stub {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.stub__link {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.stub__content {
+  flex: 0 0 auto;
+  text-align: center;
+  animation: slideIn 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}

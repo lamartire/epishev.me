@@ -7,7 +7,7 @@ import { Terminal, Link } from '../components'
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
-  return <Terminal />
+  return null
 }
 
 export const pageQuery = graphql`
