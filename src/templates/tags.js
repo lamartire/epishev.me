@@ -1,7 +1,7 @@
 import React from 'react'
 import GatsbyLink from 'gatsby-link'
 
-import Link from '../components/Link'
+// import Link from '../components/Link'
 
 export default function Tags({ pathContext }) {
   const { posts, post, tag } = pathContext
@@ -25,7 +25,7 @@ export default function Tags({ pathContext }) {
             )
           })}к
         </ul>
-        <Link to="/tags">All tags</Link>
+        {/* <Link to="/tags">All tags</Link> */}
       </div>
     )
   }

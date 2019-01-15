@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Link from '../components/Link'
+// import Link from '../components/Link'
 import Tags from '../components/Tags'
 
 export default function Template({ data, pathContext }) {
@@ -19,16 +19,16 @@ export default function Template({ data, pathContext }) {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <div className="navigation">
-          {prev && (
-            <Link className="link prev" to={prev.frontmatter.path}>
-              {prev.frontmatter.title}
-            </Link>
-          )}
-          {next && (
-            <Link className="link next" to={next.frontmatter.path}>
-              {next.frontmatter.title}
-            </Link>
-          )}
+          {/* {prev && ( */}
+          {/*   <Link className="link prev" to={prev.frontmatter.path}> */}
+          {/*     {prev.frontmatter.title} */}
+          {/*   </Link> */}
+          {/* )} */}
+          {/* {next && ( */}
+          {/*   <Link className="link next" to={next.frontmatter.path}> */}
+          {/*     {next.frontmatter.title} */}
+          {/*   </Link> */}
+          {/* )} */}
         </div>
       </div>
     </div>
