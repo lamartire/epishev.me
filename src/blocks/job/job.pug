@@ -1,0 +1,23 @@
+include /blocks/labeled-list/labeled-list
+include /blocks/card/card
+include /blocks/time-period/time-period
+
+mixin job(job)
+  +card
+    +b.job
+      p
+      +e.H3.title
+        if job.url
+          a(href=job.url rel="nofollow" target="_blank")
+            | #{job.title}
+        else
+          | #{job.title}
+      +e.SECTION.section.meta
+        span #{job.position}
+        +time-period(job.from, job.to)
+      +e.SECTION.section
+        +labeled-list("Stack", job.stack)
+      +e.SECTION.section
+        +labeled-list("Responsibilities", job.responsibilities)
+      +e.SECTION.section.content
+        | !{job.content}

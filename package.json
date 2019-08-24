@@ -1,11 +1,9 @@
 {
-  "name": "poehali",
-  "version": "3.0.0",
-  "description": "Just another frontend starter :rocket:",
+  "name": "epishev.ru",
+  "version": "1.0.0",
   "scripts": {
     "start": "NODE_ENV=development gulp",
     "build": "rimraf dist && NODE_ENV=production gulp build",
-    "test": "NODE_ENV=test ava",
     "commit": "git-cz",
     "lint": "eslint 'src/**/*.{js,jsx,json}'",
     "lint-staged": "lint-staged"
@@ -23,9 +21,9 @@
       "git add"
     ]
   },
-  "author": "lamartire <lamartire@gmail.com>",
+  "author": "Konstantin Epishev <lamartire@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/lamartire/poehali",
+  "repository": "https://github.com/lamartire/epishev.ru",
   "browserslist": [
     "last 2 version",
     "> 1%"
@@ -49,9 +47,7 @@
   "postcss": {
     "plugins": {
       "postcss-partial-import": {},
-      "postcss-custom-properties": {
-        "preserve": false
-      },
+      "postcss-custom-properties": {},
       "postcss-nested": {},
       "autoprefixer": {}
     }
@@ -112,6 +108,7 @@
     "commitizen": "^3.1.1",
     "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^2.1.0",
+    "dayjs": "^1.8.15",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-config-prettier-standard": "^2.0.0",
@@ -121,6 +118,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "fast-glob": "^3.0.4",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
     "gulp-filter": "^6.0.0",
@@ -140,6 +138,7 @@
     "hygen": "^4.0.7",
     "jade-get-data": "^1.0.1",
     "lint-staged": "^8.1.6",
+    "markdown-it": "^9.1.0",
     "postcss": "^7.0.17",
     "postcss-custom-properties": "^9.0.2",
     "postcss-nested": "^4.1.2",
@@ -148,7 +147,8 @@
     "rimraf": "^2.6.3",
     "sharec-essential-config": "^2.5.0-beta",
     "sinon": "^7.3.2",
-    "webpack": "^4.36.1"
+    "webpack": "^4.36.1",
+    "yaml-front-matter": "^4.0.0"
   },
   "dependencies": {
     "core-js": "^3.1.4",

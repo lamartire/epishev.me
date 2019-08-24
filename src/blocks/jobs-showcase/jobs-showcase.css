@@ -1,0 +1,9 @@
+.jobs-showcase {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jobs-showcase > li:not(:last-child) {
+  margin-bottom: 4em;
+}

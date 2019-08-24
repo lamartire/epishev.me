@@ -1,3 +1,4 @@
+const dayjs = require('dayjs')
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 const gulpPug = require('gulp-pug')
@@ -6,12 +7,8 @@ const plumber = require('gulp-plumber')
 const plumberErrorHandler = require('gulp-plumber-error-handler')
 const filter = require('gulp-filter')
 const rename = require('gulp-rename')
-
+const { loadMarkdown } = require('./util/markdown')
 const ENV = process.env.NODE_ENV || 'development'
-
-const data = {
-  getData: getData('src/data'),
-}
 
 const classFromProp = (key, value) => {
   if (!value) {
@@ -19,6 +16,21 @@ const classFromProp = (key, value) => {
   }
 
   return typeof value === 'string' ? value : key
+}
+const cn = props =>
+  Object.keys(props)
+    .reduce((acc, key, i) => {
+      const className = classFromProp(key, props[key])
+
+      return className ? acc.concat(className) : acc
+    }, [])
+    .join(' ')
+const formatDate = date => dayjs(date).format('YYYY MMMM')
+
+const md = loadMarkdown()
+const data = {
+  getData: getData('src/data'),
+  cv: md,
 }
 
 function pug(cb) {
@@ -37,14 +49,8 @@ function pug(cb) {
         basedir: 'src',
         pretty: ENV === 'production',
         locals: {
-          cn: props =>
-            Object.keys(props)
-              .reduce((acc, key, i) => {
-                const className = classFromProp(key, props[key])
-
-                return className ? acc.concat(className) : acc
-              }, [])
-              .join(' '),
+          formatDate,
+          cn,
         },
         data,
       }),

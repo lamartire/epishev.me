@@ -1,0 +1,22 @@
+.job {
+  padding: 2em 4em;
+}
+
+.job__section.meta {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    flex: 0 0 auto;
+  }
+
+  & > *:last-child {
+    margin-left: auto;
+  }
+}
+
+.job__section.content ul {
+  margin: 0;
+  padding-left: 1em;
+  line-height: 1.5;
+}

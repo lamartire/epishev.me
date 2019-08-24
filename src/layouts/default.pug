@@ -1,9 +1,14 @@
 include ./../../node_modules/bemto.pug/bemto
 include /blocks/head/head
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/container/container
 
-+head('Konstantin Epishev – Software engreneer without web-site')
++head('Konstantin Epishev ~ Software engineer')
 
 body
-  block content
-
+  +header
+  +container
+    block content
+  +footer
   script(src='assets/js/app.js')

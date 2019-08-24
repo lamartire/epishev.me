@@ -1,5 +1,12 @@
-/* Basic blocks */
+/* Generated blocks */
+@import '../blocks/time-period/time-period.css';
+@import '../blocks/card/card.css';
 @import '../blocks/icon/icon.css';
-
-/* Other */
-@import '../blocks/hello/hello.css';
+@import '../blocks/icon/icon.css';
+@import '../blocks/labeled-list/labeled-list.css';
+@import '../blocks/logo/logo.css';
+@import '../blocks/job/job.css';
+@import '../blocks/jobs-showcase/jobs-showcase.css';
+@import '../blocks/header/header.css';
+@import '../blocks/footer/footer.css';
+@import '../blocks/container/container.css';

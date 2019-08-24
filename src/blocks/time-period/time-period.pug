@@ -1,0 +1,8 @@
+mixin time-period(from, to)
+  +b.time-period
+    +e.TIME.date #{formatDate(from)}    
+    +e.TIME.date
+      if to
+        | #{formatDate(to)}
+      else
+        | now

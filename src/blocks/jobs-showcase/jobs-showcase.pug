@@ -1,0 +1,7 @@
+include /blocks/job/job
+
+mixin jobs-showcase(jobs)
+  +b.UL.jobs-showcase
+    each job in jobs
+      +e.LI.item
+        +job(job)

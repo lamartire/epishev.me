@@ -1,0 +1,8 @@
+mixin labeled-list(label, items)
+  +b.labeled-list
+    +e.H4.title
+      | #{label}
+    +e.UL.items
+      each item in items
+        +e.LI.item
+          | #{item}

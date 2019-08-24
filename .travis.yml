@@ -1,16 +1,12 @@
 language: node_js
 node_js:
-  - 'node'
-cache:
-  yarn: true
-
-before_install: yarn global add greenkeeper-lockfile@1
-
-before_script: greenkeeper-lockfile-update
-script: yarn test
-after_script: greenkeeper-lockfile-upload
-
-before_deploy: yarn build
+  - v10
+install:
+  - npm i
+script:
+  - npm run build
+  - npm t
+before_deploy: npm run build
 deploy:
   provider: pages
   skip_cleanup: true

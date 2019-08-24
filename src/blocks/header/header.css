@@ -1,0 +1,15 @@
+.header {
+  margin-bottom: 6em;
+}
+
+.header__logo {
+  position: fixed;
+  top: 2em;
+  left: 2em;
+  transition: transform 1.2s ease-in-out;
+
+  &:hover {
+    transform-origin: center;
+    transform: rotateY(180deg);
+  }
+}
