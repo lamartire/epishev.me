@@ -1,4 +1,7 @@
 /* Generated blocks */
+@import '../blocks/skills/skills.css';
+@import '../blocks/about/about.css';
+@import '../blocks/page-section/page-section.css';
 @import '../blocks/time-period/time-period.css';
 @import '../blocks/card/card.css';
 @import '../blocks/icon/icon.css';

@@ -3,7 +3,7 @@
 }
 
 .header__logo {
-  position: fixed;
+  position: absolute;
   top: 2em;
   left: 2em;
   transition: transform 1.2s ease-in-out;

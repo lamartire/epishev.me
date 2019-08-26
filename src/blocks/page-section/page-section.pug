@@ -1,0 +1,8 @@
+include /blocks/container/container
+
+mixin page-section(title)
+  +b.SECTION.page-section
+    +e.H3.title #{title}
+    +container
+      +e.SECTION.content
+        block

@@ -2,14 +2,15 @@ const dayjs = require('dayjs')
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 const gulpPug = require('gulp-pug')
-const getData = require('jade-get-data')
 const plumber = require('gulp-plumber')
 const plumberErrorHandler = require('gulp-plumber-error-handler')
 const filter = require('gulp-filter')
 const rename = require('gulp-rename')
 const { loadMarkdown } = require('./util/markdown')
+const { loadJSON } = require('./util/json')
 const ENV = process.env.NODE_ENV || 'development'
 
+// TODO: move that things to another place
 const classFromProp = (key, value) => {
   if (!value) {
     return null
@@ -28,9 +29,10 @@ const cn = props =>
 const formatDate = date => dayjs(date).format('YYYY MMMM')
 
 const md = loadMarkdown()
+const json = loadJSON()
 const data = {
-  getData: getData('src/data'),
   cv: md,
+  json,
 }
 
 function pug(cb) {

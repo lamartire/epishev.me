@@ -1,0 +1,57 @@
+include /blocks/card/card
+
+mixin skills()
+  +card
+    +b.skills
+      +e.SECTION.group
+        +e.STRONG.title Styles
+        +e.UL.list
+          li css
+          li stylus
+          li scss
+          li sass
+          li less
+          li css-modules
+          li css-in-js
+      +e.SECTION.group
+        +e.STRONG.title Markup
+        +e.UL.list
+          li html
+          li xml
+          li pug
+          li haml
+          li slim
+          li slm
+      +e.SECTION.group
+        +e.STRONG.title Javascript
+        +e.UL.list
+          li node.js
+          li react.js
+          li vue.js
+          li svelte
+          li redux
+          li mobx
+          li cerebral.js
+          li vuex
+          li webpack
+          li gulp
+      +e.SECTION.group
+        +e.STRONG.title Testing
+        +e.UL.list
+          li TDD
+          li BDD
+          li E2E
+          li Cypress
+          li puppeteer
+          li WebDriver
+          li Selenium
+          li Cucumber
+      +e.SECTION.group
+        +e.STRONG.title Dev Ops
+        +e.UL.list
+          li Docker
+          li CI
+
+    p
+      | Also interested in #[strong Clojure/Script], #[strong Rust], #[strong Elixir] and #[strong Go] and
+      | at the free time tryes to apply these languages for solving real-life problems.    
