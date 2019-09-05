@@ -16,6 +16,11 @@ function images(cb) {
   cb()
 }
 
+function pdf(cb) {
+  gulp.src('src/assets/pdf/*').pipe(gulp.dest('dist/assets/pdf'))
+  cb()
+}
+
 function cname(cb) {
   gulp.src('CNAME').pipe(gulp.dest('dist'))
   cb()
@@ -24,5 +29,6 @@ function cname(cb) {
 module.exports = {
   fonts,
   images,
+  pdf,
   cname,
 }

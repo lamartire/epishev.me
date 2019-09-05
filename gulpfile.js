@@ -4,7 +4,7 @@ const { js } = require('./task/js')
 const { pug } = require('./task/pug')
 const { css } = require('./task/css')
 const { svg } = require('./task/svg')
-const { fonts, images, cname } = require('./task/assets')
+const { fonts, images, pdf, cname } = require('./task/static')
 
 // Common tasks
 gulp.task('js', js)
@@ -13,6 +13,7 @@ gulp.task('css', css)
 gulp.task('svg', svg)
 gulp.task('fonts', fonts)
 gulp.task('images', images)
+gulp.task('pdf', pdf)
 gulp.task('cname', cname)
 gulp.task('serve', serve)
 
@@ -44,6 +45,6 @@ gulp.task(
 )
 gulp.task(
   'build',
-  gulp.series('fonts', 'images', 'js', 'pug', 'css', 'svg', 'cname'),
+  gulp.series('fonts', 'images', 'js', 'pug', 'css', 'svg', 'pdf', 'cname'),
 )
 gulp.task('default', gulp.series('build', gulp.parallel('serve', 'watch')))

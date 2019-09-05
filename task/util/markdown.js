@@ -19,13 +19,9 @@ const loadMarkdown = () => {
     content: markdownRenderer.render(parsedFile.__content),
   }))
 
-  return parsedMarkdownWithContent.sort((a, b) => {
-    if (new Date(b.from).getTime() > new Date(a.from).getTime()) {
-      return -1
-    }
-
-    return 0
-  })
+  return parsedMarkdownWithContent.sort(
+    (a, b) => new Date(b.from) - new Date(a.from),
+  )
 }
 
 module.exports = {
