@@ -5,6 +5,12 @@
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
 }
 
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #545454;
+  }
+}
+
 @media (max-width: 650px) {
   .card {
     padding: 1.25em 2em;

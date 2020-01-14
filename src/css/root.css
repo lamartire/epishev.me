@@ -1,5 +1,15 @@
-:root {
-  --color-pink: #f1efff;
-  --color-pink-dark: #9543a6;
-  --color-black: #2f2f2f;
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f1efff;
+    --color-link: #9543a6;
+    --color-text: #2f2f2f;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #454545;
+    --color-link: #9543a6;
+    --color-text: #cecece;
+  }
 }

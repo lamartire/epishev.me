@@ -8,8 +8,8 @@ body {
 body {
   padding: 2em;
   margin: 0;
-  background-color: var(--color-pink);
-  color: var(--color-black);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h2 {
@@ -30,5 +30,5 @@ p {
 }
 
 a {
-  color: var(--color-pink-dark);
+  color: var(--link);
 }

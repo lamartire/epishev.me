@@ -14,9 +14,15 @@
   vertical-align: middle;
   height: 1px;
   width: 160px;
-  background: #000;
+  background-color: #000;
   margin-right: 1em;
   margin-left: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .time-period time:first-child:not(:only-child):after {
+    background-color: #545454;
+  }
 }
 
 @media (max-width: 900px) {
