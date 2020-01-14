@@ -3,10 +3,23 @@ include /blocks/card/card
 mixin about()
   +card
     +b.about
+      h2
+        | Hello, my name is Konstantin Epishev!
+      p
+        | I'm software engineer and my main focus is user interfaces.
+      p
+        | I have great experience with solving problems by #[strong JavaScript] ecosystem. You can meet 
+        | with my employment history below or just #[strong #[a(href="assets/pdf/Epishev Konstantin ~ Curriculum Vitae.pdf" target="_blank" title="Epishev Konstantin - Curriculum Vitae") download my CV]]
+      p
+        | Also I'm trying to improve developer experience by different ways. 
+      p
+        | For example, my OSS project #[strong #[a(href="https://github.com/lamartire/sharec" target="_blank" title="Sharec - tool for configuration distribution and management") sharec]]
+        | can help you distribute and make your configuration sharable and consistent.
+      h3 Links
       +e.UL.list
-        li Name: #[strong Konstantin Epishev]
-        li Date of Birth: #[strong 1994 June 19th]
-        li Citizenship: #[strong Russian Federation]
-        li Languages: #[strong 🇷🇺 Russian], #[strong 🇬🇧 English], #[strong 🇵🇱 Polish] (beginner)
-      +e.A.cv(href="assets/pdf/Epishev Konstantin ~ Curriculum Vitae.pdf" target="_blank") 
-        | Download CV
+        li
+          a(href="mailto:lamartire@gmail.com" title="Contact email") lamartire@gmail.com
+        li
+          a(href="https://github.com/lamartire" target="_blank" title="Github profile") Github
+        li
+          a(href="https://www.linkedin.com/in/konstanitn-epishev-a53092150/" target="_blank" title="LinkedIn profile") LinkedIn        

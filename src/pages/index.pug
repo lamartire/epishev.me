@@ -3,19 +3,10 @@ extends /layouts/default
 include /blocks/page-section/page-section
 include /blocks/jobs-showcase/jobs-showcase
 include /blocks/about/about
-include /blocks/skills/skills
 include /blocks/card/card
 
 block content
   +page-section("About me")
     +about
-  +page-section("Skills")
-    +skills
   +page-section("Employment history")
     +jobs-showcase(cv)
-  //- +page-section("Projects")
-  //-   +card
-  //-     | projects
-  //- +page-section("Links")
-  //-   +card
-  //-     | links
