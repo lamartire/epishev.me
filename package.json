@@ -1,5 +1,5 @@
 {
-  "name": "epishev.ru",
+  "name": "epishev.me",
   "version": "1.0.0",
   "scripts": {
     "start": "NODE_ENV=development gulp",
@@ -24,7 +24,7 @@
   },
   "author": "Konstantin Epishev <lamartire@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/lamartire/epishev.ru",
+  "repository": "https://github.com/lamartire/epishev.me",
   "browserslist": [
     "last 2 version",
     "> 1%"
