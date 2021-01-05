@@ -6,8 +6,7 @@
     "build": "rimraf dist && NODE_ENV=production gulp build",
     "commit": "git-cz",
     "lint": "eslint 'src/**/*.{js,jsx,json}'",
-    "lint-staged": "lint-staged",
-    "test": "echo 'Everything is ok!'"
+    "lint-staged": "lint-staged"
   },
   "husky": {
     "hooks": {
