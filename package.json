@@ -4,6 +4,7 @@
   "scripts": {
     "start": "NODE_ENV=development gulp",
     "build": "rimraf dist && NODE_ENV=production gulp build",
+    "deploy": "npm run build && node ./scripts/deploy.js",
     "commit": "git-cz",
     "lint": "eslint 'src/**/*.{js,jsx,json}'",
     "lint-staged": "lint-staged"
@@ -119,6 +120,7 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "fast-glob": "^3.0.4",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
     "gulp-filter": "^6.0.0",
