@@ -2,6 +2,7 @@
 title: Endpass Inc.
 url: https://endpass.com
 from: 2018-09
+to: 2020-06
 position: Frontend Engineer
 stack:
   - javascript

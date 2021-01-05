@@ -21,7 +21,7 @@
 
 @media (prefers-color-scheme: dark) {
   .time-period time:first-child:not(:only-child):after {
-    background-color: #545454;
+    background-color: #dadada;
   }
 }
 
