@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: light) {
   :root {
-    --color-bg: #f1efff;
+    --color-bg: #fff;
     --color-link: #9543a6;
     --color-text: #2f2f2f;
   }
